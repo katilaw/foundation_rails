@@ -6,6 +6,7 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic|Lora:400,400italic' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -17,7 +18,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">My Site</a></h1>
+          <h1><a href="#">Vintage Garage</a></h1>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -26,24 +27,24 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
+          <li class="active"><a href="#">Collector's Corner</a></li>
           <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
+            <a href="#">Purchase Vehicle</a>
             <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
+              <li><a href="#">Future Models</a></li>
+              <li class="active"><a href="#">Classic Cars</a></li>
             </ul>
           </li>
         </ul>
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
+          <li><a href="#">Custom Vehicles</a></li>
         </ul>
       </section>
     </nav>
 
-    <div class="row">
+    <div class="special">
       <%= yield %>
     </div>
 
