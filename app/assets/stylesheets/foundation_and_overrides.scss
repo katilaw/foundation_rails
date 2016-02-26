@@ -122,7 +122,7 @@ $include-html-global-classes: $include-html-classes;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
-$new-blue: #0f4d92;
+$new-blue: #0069BA;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -989,24 +989,24 @@ $input-prefix-border-size: 0px;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color($white, $lightness: -5%);  //form-bg-color-effect
+$panel-bg: black;  //special-effect(panel-bg-color)
 // $panel-border-style: solid;
-$panel-border-size: 5px; //larger-border-color-effect
-// $callout-panel-bg: scale-color($primary-color, $lightness: 94%);  //bg-color-effect
+$panel-border-size: 2px; //special-effect(border-size)
+// $callout-panel-bg: scale-color($primary-color, $lightness: 94%);
 
 // We use this % to control how much we darken things on hover
-// $panel-border-color: scale-color($panel-bg, $lightness: -11%);
+$panel-border-color: white;//special-effect(white-border)
 
 // We use these to set default inner padding and bottom margin
 // $panel-margin-bottom: rem-calc(20);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-// $panel-font-color: $oil;
-// $panel-font-color-alt: $white;
+// $panel-font-color: red; //#
+// $panel-font-color-alt: $white; //#
 
 // $panel-header-adjust: true;
-// $callout-panel-link-color: $primary-color;
+// $callout-panel-link-color: $primary-color; //#
 // $callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightness: -14%);
 
 // 22. Pricing Tables
@@ -1408,12 +1408,12 @@ $topbar-bg-color: black;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(60);
+$topbar-height: rem-calc(50);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-$topbar-title-font-size: rem-calc(50);
+$topbar-title-font-size: rem-calc(40);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
@@ -1421,17 +1421,17 @@ $topbar-title-font-size: rem-calc(50);
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: rem-calc(20);
+$topbar-link-font-size: rem-calc(18);
 // $topbar-link-hover-lightness: -14%; // Darken by 14%
 // $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: red;
 
 // $topbar-link-bg-hover: $jet;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $new-blue;
+$topbar-link-bg-active: $new-blue;
 
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -24%);
+$topbar-link-bg-active: $new-blue;
+$topbar-link-bg-active-hover: scale-color($new-blue, $lightness: +24%);
 $topbar-link-font-family: Playfair Display, serif;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);

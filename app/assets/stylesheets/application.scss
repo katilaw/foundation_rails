@@ -1,6 +1,35 @@
 @import url('http://fonts.googleapis.com/css?family=Playfair+Display');
 @import 'foundation_and_overrides';
-@import 'style';
+@import 'index';
 
 //scss scripts not getting imported
 //commit changes to git
+
+footer {
+  background-color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  h5 {
+    color: $white;
+    margin-left: 1.25rem;
+  }
+
+  h6 {
+    color: $primary-color;
+  }
+
+  li {
+    list-style: none;
+
+    i {
+      color: $white;
+    }
+  }
+
+  span {
+    color: $primary-color;
+  }
+}

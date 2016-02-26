@@ -3,7 +3,7 @@
   background-size: cover;
   position: relative;
   max-width: 150%;
-  padding-bottom: 4em;
+  padding-bottom: 4rem;
 
   // nice-grey-color: #36393B;
 }
@@ -15,4 +15,7 @@
 .title-area {
   font-family: Playfair Display, serif;
   font-style: italic;
+}
+body {
+  background-color: #36393B;
 }

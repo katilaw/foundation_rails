@@ -4,13 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Vintage Garage" %></title>
 
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic|Lora:400,400italic' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://api.thumbr.it/whitenoise-989x410.png?" rel="stylesheet">
   </head>
 
   <body>
@@ -47,6 +49,44 @@
     <div class="special">
       <%= yield %>
     </div>
-
   </body>
+
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="small-2 medium-4 columns">
+          <h6>NAVIGATION</h6>
+          <ul class="nav_text">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Automotive News</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="small-4 medium-4 columns">
+          <h6>CONTACT INFO</h6>
+          <ul>
+            <li>
+              <i class="large material-icons">business</i>
+              <span>Vintage Garage</span><br>
+            </li>
+            <li>
+              <i class="large material-icons">call</i>
+              <span>+1 717-380-7160</span><br>
+            </li>
+            <li>
+              <i class="large material-icons">email</i>
+              <span><a href="katilaw@gmail.com">Vintage_Garage@gmail.com</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="small-6 medium-4 columns">
+          <h6>PROUDLY BUILT BY</h6>
+          <h5>This Guy!</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
